@@ -74,7 +74,7 @@ const projectSchema = new mongoose.Schema({
           subTaskId: {
             type: Number,
             unique: true,
-            required: true,
+           // required: true,
             default: function () {
               // Generate a random 6-digit ID
               return Math.floor(1000 + Math.random() * 9000);
